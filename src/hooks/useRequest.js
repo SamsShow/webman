@@ -32,7 +32,7 @@ export function useRequest() {
       const options = {
         method,
         headers: {
-          Accept: "application/json",
+          "Accept": "application/json",
           "Content-Type": "application/json",
           ...headers, // Custom headers should override defaults
         },

@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WebPost - Modern API Testing Tool
+
+WebPost is a modern, feature-rich API testing tool built with Next.js and React. It provides a clean, intuitive interface for testing HTTP APIs with support for all common HTTP methods, request customization, and response visualization.
+
+![WebPost Screenshot](screenshot.png)
+
+## Features
+
+### Core Functionality
+
+- 🚀 Support for all common HTTP methods (GET, POST, PUT, DELETE, PATCH)
+- 📝 JSON request body editor
+- 🔧 Custom headers management
+- 👁️ Beautiful response visualization
+- 🎨 Light/Dark theme support
+
+### Request Management
+
+- 📚 Save and load request collections
+- 📱 Request history with persistence
+- 📋 Easy request sharing
+- 🔄 Quick request restoration from history
+
+### User Experience
+
+- 💫 Modern, clean interface
+- 🌙 Dark mode support
+- 📱 Responsive design
+- 🔔 Toast notifications
+- 🎯 Error handling with user-friendly messages
+
+## Tech Stack
+
+- ⚛️ Next.js 14 (App Router)
+- 🎨 Tailwind CSS
+- 🌗 next-themes for theme management
+- 🔧 Modern JavaScript features
+- 📦 Lightweight and fast
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/webpost.git
+cd webpost
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Making Requests
 
-## Learn More
+1. Select the HTTP method from the dropdown
+2. Enter the API URL
+3. Add any required headers in the Headers tab
+4. For POST/PUT/PATCH requests, add your JSON body in the Body tab
+5. Click "Send" to make the request
 
-To learn more about Next.js, take a look at the following resources:
+### Managing Collections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Save Collection**: Click "Save Collection" to download your current request history
+- **Load Collection**: Click "Load Collection" to import a previously saved collection
+- **Share**: Click "Share" to copy the collection data to clipboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Theme Switching
 
-## Deploy on Vercel
+Click the sun/moon icon in the navbar to switch between:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Light theme
+- Dark theme
+- System preference
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
+
+## Support
+
+If you find this project helpful, please give it a ⭐️!

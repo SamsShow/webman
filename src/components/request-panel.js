@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import {
@@ -25,7 +25,7 @@ const HTTP_METHODS = ["GET", "POST", "PUT", "DELETE", "PATCH"];
 
 // Main component for making API requests
 // Handles request configuration including method, URL, headers, and body
-export function RequestPanel({ onResponse }) {
+export function RequestPanel({ onResponse, onMethodChange, onUrlChange }) {
   // State for request configuration
   const [url, setUrl] = useState(""); // Store the request URL
   const [method, setMethod] = useState("GET"); // HTTP method (defaults to GET)
@@ -35,6 +35,15 @@ export function RequestPanel({ onResponse }) {
 
   // Get request handling functions from our custom hook
   const { sendRequest, loading } = useRequest();
+
+  // Notify parent component when method or URL changes
+  useEffect(() => {
+    onMethodChange?.(method);
+  }, [method, onMethodChange]);
+
+  useEffect(() => {
+    onUrlChange?.(url);
+  }, [url, onUrlChange]);
 
   // Add a new empty header field
   const handleAddHeader = () => {
