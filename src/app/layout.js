@@ -6,7 +6,7 @@ import { Toaster } from "../components/ui/toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "WebPost - API Testing Tool",
+  title: "WebMan - API Testing Tool",
   description: "A modern API testing tool built with Next.js",
 };
 
