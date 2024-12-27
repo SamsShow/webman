@@ -1,8 +1,8 @@
-# WebPost - Modern API Testing Tool
+# WebMan - Modern API Testing Tool
 
-WebPost is a modern, feature-rich API testing tool built with Next.js and React. It provides a clean, intuitive interface for testing HTTP APIs with support for all common HTTP methods, request customization, and response visualization.
+WebMan is a modern, feature-rich API testing tool built with Next.js and React. It provides a clean, intuitive interface for testing HTTP APIs with support for all common HTTP methods, request customization, and response visualization.
 
-![WebPost Screenshot](screenshot.png)
+
 
 ## Features
 
@@ -49,8 +49,8 @@ WebPost is a modern, feature-rich API testing tool built with Next.js and React.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/webpost.git
-cd webpost
+git clone https://github.com/SamsShow/webman.git
+cd webman
 ```
 
 2. Install dependencies:
